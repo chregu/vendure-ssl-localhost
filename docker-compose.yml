@@ -28,6 +28,9 @@ services:
     ports:
       - 6457:6379
 
+
+# that's what you need for an https enabled access to vendure.io locally
+
   server:
     build:
       context: .

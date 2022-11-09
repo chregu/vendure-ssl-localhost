@@ -1,6 +1,6 @@
 # Local https with vendure.io and traefik
 
-Sometimes you need an SSL secured connection for developing stuff locally. For example for OpenID Connect or SAML logins
+Sometimes you need an SSL secured connection for developing stuff locally with [vendure.io](https://vendure.io). For example for OpenID Connect or SAML logins
 or some payment providers.
 
 We did this with traefik and docker-compose. 
@@ -8,6 +8,11 @@ We did this with traefik and docker-compose.
 It won't be accessible from the outside with this, for this you need different 
 approaches like [ngrok](https://ngrok.com/) or [Cloudflare Tunnels](https://www.cloudflare.com/products/tunnel/).
 
+## Important files
+
+If you want to use it for your project, the important stuff is in the `.traefik` folder and the lower part
+of `docker-compose.yml`. Copy this into your project and adjust it, and you should be good to go (with the steps 
+described below)
 
 
 ## Steps
