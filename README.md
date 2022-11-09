@@ -14,6 +14,9 @@ If you want to use it for your project, the important stuff is in the `.traefik`
 of `docker-compose.yml`. Copy this into your project and adjust it, and you should be good to go (with the steps 
 described below)
 
+It also uses [liip/docker-ssl-keygen](https://github.com/liip/docker-ssl-keygen) to generate the ssl certs. If 
+you don't trust it, it's easy to adjust to your needs.
+
 
 ## Steps
 
