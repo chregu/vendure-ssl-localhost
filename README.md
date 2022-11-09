@@ -17,6 +17,9 @@ described below)
 It also uses [liip/docker-ssl-keygen](https://github.com/liip/docker-ssl-keygen) to generate the ssl certs. If 
 you don't trust it, it's easy to adjust to your needs.
 
+You could also use [mkcert](https://github.com/FiloSottile/mkcert) for generating the certificates (for some strange
+reason mkcert hang on my Laptop during installation)
+
 
 ## Steps
 
