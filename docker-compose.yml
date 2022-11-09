@@ -19,14 +19,6 @@ services:
     - type: bind
       source: init_dev.sql
       target: /docker-entrypoint-initdb.d/init_dev.sql
-  redis:
-    image: redis:6-alpine
-    hostname: redis
-    environment:
-      - ALLOW_EMPTY_PASSWORD=yes
-    restart: always
-    ports:
-      - 6457:6379
 
 
 # that's what you need for an https enabled access to vendure.io locally
@@ -44,8 +36,6 @@ services:
     environment:
       DB_HOST: db
       DB_PORT: 5432
-      REDIS_PORT: 6379
-      REDIS_HOST: redis
     profiles:
       - "tls"
     labels:
