@@ -16,6 +16,82 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
+ALTER TABLE IF EXISTS ONLY public.asset_tags_tag DROP CONSTRAINT IF EXISTS "FK_fb5e800171ffbe9823f2cc727fd";
+ALTER TABLE IF EXISTS ONLY public.collection_product_variants_product_variant DROP CONSTRAINT IF EXISTS "FK_fb05887e2867365f236d7dd95ee";
+ALTER TABLE IF EXISTS ONLY public.product_variant_asset DROP CONSTRAINT IF EXISTS "FK_fa21412afac15a2304f3eb35feb";
+ALTER TABLE IF EXISTS ONLY public.shipping_method_channels_channel DROP CONSTRAINT IF EXISTS "FK_f2b98dfb56685147bed509acc3d";
+ALTER TABLE IF EXISTS ONLY public.shipping_method_channels_channel DROP CONSTRAINT IF EXISTS "FK_f0a17b94aa5a162f0d422920eb2";
+ALTER TABLE IF EXISTS ONLY public.session DROP CONSTRAINT IF EXISTS "FK_eb87ef1e234444728138302263b";
+ALTER TABLE IF EXISTS ONLY public.facet_translation DROP CONSTRAINT IF EXISTS "FK_eaea53f44bf9e97790d38a3d68f";
+ALTER TABLE IF EXISTS ONLY public.product_variant_options_product_option DROP CONSTRAINT IF EXISTS "FK_e96a71affe63c97f7fa2f076dac";
+ALTER TABLE IF EXISTS ONLY public.stock_movement DROP CONSTRAINT IF EXISTS "FK_e65ba3882557cab4febb54809bb";
+ALTER TABLE IF EXISTS ONLY public.product_variant_price DROP CONSTRAINT IF EXISTS "FK_e6126cd268aea6e9b31d89af9ab";
+ALTER TABLE IF EXISTS ONLY public.product_variant DROP CONSTRAINT IF EXISTS "FK_e38dca0d82fd64c7cf8aac8b8ef";
+ALTER TABLE IF EXISTS ONLY public.collection_translation DROP CONSTRAINT IF EXISTS "FK_e329f9036210d75caa1d8f2154a";
+ALTER TABLE IF EXISTS ONLY public.shipping_line DROP CONSTRAINT IF EXISTS "FK_e2e7642e1e88167c1dfc827fdf3";
+ALTER TABLE IF EXISTS ONLY public.facet_value_channels_channel DROP CONSTRAINT IF EXISTS "FK_e1d54c0b9db3e2eb17faaf5919c";
+ALTER TABLE IF EXISTS ONLY public.role_channels_channel DROP CONSTRAINT IF EXISTS "FK_e09dfee62b158307404202b43a5";
+ALTER TABLE IF EXISTS ONLY public.customer_channels_channel DROP CONSTRAINT IF EXISTS "FK_dc9f69207a8867f83b0fd257e30";
+ALTER TABLE IF EXISTS ONLY public.asset_channels_channel DROP CONSTRAINT IF EXISTS "FK_dc4e7435f9f5e9e6436bebd33bb";
+ALTER TABLE IF EXISTS ONLY public.address DROP CONSTRAINT IF EXISTS "FK_dc34d382b493ade1f70e834c4d3";
+ALTER TABLE IF EXISTS ONLY public.address DROP CONSTRAINT IF EXISTS "FK_d87215343c3a3a67e6a0b7f3ea9";
+ALTER TABLE IF EXISTS ONLY public.stock_movement DROP CONSTRAINT IF EXISTS "FK_d2c8d5fca981cc820131f81aa83";
+ALTER TABLE IF EXISTS ONLY public.product_variant_channels_channel DROP CONSTRAINT IF EXISTS "FK_d194bff171b62357688a5d0f559";
+ALTER TABLE IF EXISTS ONLY public.facet_value DROP CONSTRAINT IF EXISTS "FK_d101dc2265a7341be3d94968c5b";
+ALTER TABLE IF EXISTS ONLY public.order_channels_channel DROP CONSTRAINT IF EXISTS "FK_d0d16db872499e83b15999f8c7a";
+ALTER TABLE IF EXISTS ONLY public.payment DROP CONSTRAINT IF EXISTS "FK_d09d285fe1645cd2f0db811e293";
+ALTER TABLE IF EXISTS ONLY public.collection_channels_channel DROP CONSTRAINT IF EXISTS "FK_cdbf33ffb5d4519161251520083";
+ALTER TABLE IF EXISTS ONLY public.order_line DROP CONSTRAINT IF EXISTS "FK_cbcd22193eda94668e84d33f185";
+ALTER TABLE IF EXISTS ONLY public.stock_movement DROP CONSTRAINT IF EXISTS "FK_cbb0990e398bf7713aebdd38482";
+ALTER TABLE IF EXISTS ONLY public.order_modification DROP CONSTRAINT IF EXISTS "FK_cb66b63b6e97613013795eadbd5";
+ALTER TABLE IF EXISTS ONLY public.facet_channels_channel DROP CONSTRAINT IF EXISTS "FK_ca796020c6d097e251e5d6d2b02";
+ALTER TABLE IF EXISTS ONLY public.shipping_line DROP CONSTRAINT IF EXISTS "FK_c9f34a440d490d1b66f6829b86c";
+ALTER TABLE IF EXISTS ONLY public.channel DROP CONSTRAINT IF EXISTS "FK_c9ca2f58d4517460435cbd8b4c9";
+ALTER TABLE IF EXISTS ONLY public.payment_method_channels_channel DROP CONSTRAINT IF EXISTS "FK_c00e36f667d35031087b382e61b";
+ALTER TABLE IF EXISTS ONLY public.role_channels_channel DROP CONSTRAINT IF EXISTS "FK_bfd2a03e9988eda6a9d11760119";
+ALTER TABLE IF EXISTS ONLY public.product_variant_channels_channel DROP CONSTRAINT IF EXISTS "FK_beeb2b3cd800e589f2213ae99d6";
+ALTER TABLE IF EXISTS ONLY public.customer_groups_customer_group DROP CONSTRAINT IF EXISTS "FK_b823a3c8bf3b78d3ed68736485c";
+ALTER TABLE IF EXISTS ONLY public.channel DROP CONSTRAINT IF EXISTS "FK_afe9f917a1c82b9e9e69f7c6129";
+ALTER TABLE IF EXISTS ONLY public.facet_value_channels_channel DROP CONSTRAINT IF EXISTS "FK_ad690c1b05596d7f52e52ffeedd";
+ALTER TABLE IF EXISTS ONLY public.order_modification DROP CONSTRAINT IF EXISTS "FK_ad2991fa2933ed8b7f86a716338";
+ALTER TABLE IF EXISTS ONLY public.customer_channels_channel DROP CONSTRAINT IF EXISTS "FK_a842c9fe8cd4c8ff31402d172d7";
+ALTER TABLE IF EXISTS ONLY public.product_option_translation DROP CONSTRAINT IF EXISTS "FK_a79a443c1f7841f3851767faa6d";
+ALTER TABLE IF EXISTS ONLY public.product_option_group DROP CONSTRAINT IF EXISTS "FK_a6e91739227bf4d442f23c52c75";
+ALTER TABLE IF EXISTS ONLY public.product_option DROP CONSTRAINT IF EXISTS "FK_a6debf9198e2fbfa006aa10d710";
+ALTER TABLE IF EXISTS ONLY public.order_item_fulfillments_fulfillment DROP CONSTRAINT IF EXISTS "FK_a568a3d5aa7f237edab624960b9";
+ALTER TABLE IF EXISTS ONLY public.product_channels_channel DROP CONSTRAINT IF EXISTS "FK_a51dfbd87c330c075c39832b6e7";
+ALTER TABLE IF EXISTS ONLY public.surcharge DROP CONSTRAINT IF EXISTS "FK_a49c5271c39cc8174a0535c8088";
+ALTER TABLE IF EXISTS ONLY public.order_modification_order_items_order_item DROP CONSTRAINT IF EXISTS "FK_a48502a38aded69d087a8ec08ad";
+ALTER TABLE IF EXISTS ONLY public.order_line DROP CONSTRAINT IF EXISTS "FK_9f065453910ea77d4be8e92618f";
+ALTER TABLE IF EXISTS ONLY public.asset_tags_tag DROP CONSTRAINT IF EXISTS "FK_9e412b00d4c6cee1a4b3d920716";
+ALTER TABLE IF EXISTS ONLY public.order_modification_order_items_order_item DROP CONSTRAINT IF EXISTS "FK_9d631d7bd3d44af50eca535d728";
+ALTER TABLE IF EXISTS ONLY public.tax_rate DROP CONSTRAINT IF EXISTS "FK_9872fc7de2f4e532fd3230d1915";
+ALTER TABLE IF EXISTS ONLY public.product_option_group_translation DROP CONSTRAINT IF EXISTS "FK_93751abc1451972c02e033b766c";
+ALTER TABLE IF EXISTS ONLY public.history_entry DROP CONSTRAINT IF EXISTS "FK_92f8c334ef06275f9586fd01832";
+ALTER TABLE IF EXISTS ONLY public.product DROP CONSTRAINT IF EXISTS "FK_91a19e6613534949a4ce6e76ff8";
+ALTER TABLE IF EXISTS ONLY public.tax_rate DROP CONSTRAINT IF EXISTS "FK_8b5ab52fc8887c1a769b9276caf";
+ALTER TABLE IF EXISTS ONLY public.customer_groups_customer_group DROP CONSTRAINT IF EXISTS "FK_85feea3f0e5e82133605f78db02";
+ALTER TABLE IF EXISTS ONLY public.shipping_method_translation DROP CONSTRAINT IF EXISTS "FK_85ec26c71067ebc84adcd98d1a5";
+ALTER TABLE IF EXISTS ONLY public.order_item_fulfillments_fulfillment DROP CONSTRAINT IF EXISTS "FK_8132041a647c28eb27ecc1691fa";
+ALTER TABLE IF EXISTS ONLY public.tax_rate DROP CONSTRAINT IF EXISTS "FK_7ee3306d7638aa85ca90d672198";
+ALTER TABLE IF EXISTS ONLY public.product_translation DROP CONSTRAINT IF EXISTS "FK_7dbc75cb4e8b002620c4dbfdac5";
+ALTER TABLE IF EXISTS ONLY public.zone_members_country DROP CONSTRAINT IF EXISTS "FK_7baeecaf955e54bec73f998b0d5";
+ALTER TABLE IF EXISTS ONLY public.session DROP CONSTRAINT IF EXISTS "FK_7a75399a4f4ffa48ee02e98c059";
+ALTER TABLE IF EXISTS ONLY public.order_line DROP CONSTRAINT IF EXISTS "FK_77be94ce9ec6504466179462275";
+ALTER TABLE IF EXISTS ONLY public.zone_members_country DROP CONSTRAINT IF EXISTS "FK_7350d77b6474313fbbaf4b094c1";
+ALTER TABLE IF EXISTS ONLY public.collection DROP CONSTRAINT IF EXISTS "FK_7256fef1bb42f1b38156b7449f5";
+ALTER TABLE IF EXISTS ONLY public.collection_channels_channel DROP CONSTRAINT IF EXISTS "FK_7216ab24077cf5cbece7857dbbd";
+ALTER TABLE IF EXISTS ONLY public.collection_product_variants_product_variant DROP CONSTRAINT IF EXISTS "FK_6faa7b72422d9c4679e2f186ad1";
+ALTER TABLE IF EXISTS ONLY public.product_variant DROP CONSTRAINT IF EXISTS "FK_6e420052844edf3a5506d863ce6";
+ALTER TABLE IF EXISTS ONLY public.promotion_channels_channel DROP CONSTRAINT IF EXISTS "FK_6d9e2c39ab12391aaa374bcdaa4";
+ALTER TABLE IF EXISTS ONLY public.product_facet_values_facet_value DROP CONSTRAINT IF EXISTS "FK_6a0558e650d75ae639ff38e413a";
+ALTER TABLE IF EXISTS ONLY public.product_variant_facet_values_facet_value DROP CONSTRAINT IF EXISTS "FK_69567bc225b6bbbd732d6c5455b";
+ALTER TABLE IF EXISTS ONLY public.order_item DROP CONSTRAINT IF EXISTS "FK_69384323444206753f0cdeb64e0";
+ALTER TABLE IF EXISTS ONLY public.order_promotions_promotion DROP CONSTRAINT IF EXISTS "FK_67be0e40122ab30a62a9817efe0";
+ALTER TABLE IF EXISTS ONLY public.user_roles_role DROP CONSTRAINT IF EXISTS "FK_5f9286e6c25594c6b88c108db77";
+ALTER TABLE IF EXISTS ONLY public.payment_method_channels_channel DROP CONSTRAINT IF EXISTS "FK_5bcb569635ce5407eb3f264487d";
+ALTER TABLE IF EXISTS ONLY public.product_asset DROP CONSTRAINT IF EXISTS "FK_5888ac17b317b93378494a10620";
+ALTER TABLE IF EXISTS ONLY public.product_variant_options_product_option DROP CONSTRAINT IF EXISTS "FK_526f0131260eec308a3bd2b61b6";
 ALTER TABLE IF EXISTS ONLY public.collection_asset DROP CONSTRAINT IF EXISTS "FK_51da53b26522dc0525762d2de8e";
 ALTER TABLE IF EXISTS ONLY public.user_roles_role DROP CONSTRAINT IF EXISTS "FK_4be2f7adf862634f5f803d246b8";
 ALTER TABLE IF EXISTS ONLY public.history_entry DROP CONSTRAINT IF EXISTS "FK_43ac602f839847fdb91101f30ec";
@@ -865,8 +941,7 @@ CREATE TABLE public.customer (
     "phoneNumber" character varying,
     "emailAddress" character varying NOT NULL,
     id integer NOT NULL,
-    "userId" integer,
-    "customFieldsKycstate" character varying(255) DEFAULT 'Unapproved'::character varying
+    "userId" integer
 );
 
 
@@ -1816,16 +1891,7 @@ CREATE TABLE public.product (
     "deletedAt" timestamp without time zone,
     enabled boolean DEFAULT true NOT NULL,
     id integer NOT NULL,
-    "featuredAssetId" integer,
-    "customFieldsPackages" text,
-    "customFieldsState" character varying(255) DEFAULT 'Created'::character varying,
-    "customFieldsInitialstock" integer,
-    "customFieldsGuaranteedpaid" integer DEFAULT 0,
-    "customFieldsGuaranteed" integer DEFAULT 0,
-    "customFieldsReservedpaid" integer DEFAULT 0,
-    "customFieldsReserved" integer DEFAULT 0,
-    "customFieldsSellstartdate" timestamp(6) without time zone,
-    "customFieldsSellenddate" timestamp(6) without time zone
+    "featuredAssetId" integer
 );
 
 
@@ -3493,7 +3559,7 @@ COPY public.country_translation ("createdAt", "updatedAt", "languageCode", name,
 -- Data for Name: customer; Type: TABLE DATA; Schema: public; Owner: vendure
 --
 
-COPY public.customer ("createdAt", "updatedAt", "deletedAt", title, "firstName", "lastName", "phoneNumber", "emailAddress", id, "userId", "customFieldsKycstate") FROM stdin;
+COPY public.customer ("createdAt", "updatedAt", "deletedAt", title, "firstName", "lastName", "phoneNumber", "emailAddress", id, "userId") FROM stdin;
 \.
 
 
@@ -3725,10 +3791,6 @@ COPY public.page_sections_page_section ("pageId", "pageSectionId") FROM stdin;
 --
 
 COPY public.page_translation ("createdAt", "updatedAt", "languageCode", title, slug, text, id, "baseId") FROM stdin;
-2022-10-28 06:43:28.643396	2022-10-28 06:43:28.643396	de	Über uns	uber-uns	<h2>Über uns</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu felis bibendum ut tristique et egestas. Orci sagittis eu volutpat odio facilisis mauris sit. Semper eget duis at tellus at urna condimentum. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Fermentum iaculis eu non diam phasellus vestibulum. Dictumst quisque sagittis purus sit. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Rhoncus mattis rhoncus urna neque. Mus mauris vitae ultricies leo integer malesuada nunc vel. Cursus euismod quis viverra nibh cras pulvinar mattis.</p><p>Ipsum dolor sit amet consectetur adipiscing elit. Pretium nibh ipsum consequat nisl vel pretium lectus quam. Pulvinar mattis nunc sed blandit. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Sapien pellentesque habitant morbi tristique senectus et netus et. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Orci sagittis eu volutpat odio facilisis mauris sit. Vitae suscipit tellus mauris a diam maecenas. Neque viverra justo nec ultrices dui sapien eget. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Quam lacus suspendisse faucibus interdum. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Sagittis nisl rhoncus mattis rhoncus urna neque. Aliquet risus feugiat in ante. Enim nunc faucibus a pellentesque sit amet porttitor eget.</p><p>Dapibus ultrices in iaculis nunc sed augue lacus. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Tortor vitae purus faucibus ornare suspendisse. Risus pretium quam vulputate dignissim suspendisse in est ante in. Aliquam faucibus purus in massa tempor. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Eu mi bibendum neque egestas congue quisque egestas diam in. Tempus egestas sed sed risus pretium quam vulputate. In nisl nisi scelerisque eu ultrices. Consequat mauris nunc congue nisi vitae. Iaculis eu non diam phasellus vestibulum lorem. Ipsum nunc aliquet bibendum enim facilisis gravida.</p><p>Proin fermentum leo vel orci porta non pulvinar. Fermentum leo vel orci porta non pulvinar neque laoreet. Elementum nibh tellus molestie nunc non blandit. Lacus vel facilisis volutpat est velit egestas dui. Malesuada fames ac turpis egestas. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Senectus et netus et malesuada fames ac turpis. Neque gravida in fermentum et sollicitudin ac. Faucibus nisl tincidunt eget nullam non nisi est sit. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eleifend donec pretium vulputate sapien.</p><p>Lorem donec massa sapien faucibus. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Morbi tempus iaculis urna id volutpat lacus laoreet. Mi sit amet mauris commodo quis imperdiet. Tortor posuere ac ut consequat semper. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Odio tempor orci dapibus ultrices in iaculis nunc sed. Cras sed felis eget velit aliquet sagittis id. Vestibulum mattis ullamcorper velit sed. Pharetra vel turpis nunc eget lorem dolor sed.</p>	1	1
-2022-10-28 06:43:42.039516	2022-10-28 06:43:42.039516	fr	Qui sommes-nous	qui-sommes-nous	<h2>Qui sommes-nous</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu felis bibendum ut tristique et egestas. Orci sagittis eu volutpat odio facilisis mauris sit. Semper eget duis at tellus at urna condimentum. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Fermentum iaculis eu non diam phasellus vestibulum. Dictumst quisque sagittis purus sit. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Rhoncus mattis rhoncus urna neque. Mus mauris vitae ultricies leo integer malesuada nunc vel. Cursus euismod quis viverra nibh cras pulvinar mattis.</p><p>Ipsum dolor sit amet consectetur adipiscing elit. Pretium nibh ipsum consequat nisl vel pretium lectus quam. Pulvinar mattis nunc sed blandit. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Sapien pellentesque habitant morbi tristique senectus et netus et. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Orci sagittis eu volutpat odio facilisis mauris sit. Vitae suscipit tellus mauris a diam maecenas. Neque viverra justo nec ultrices dui sapien eget. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Quam lacus suspendisse faucibus interdum. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Sagittis nisl rhoncus mattis rhoncus urna neque. Aliquet risus feugiat in ante. Enim nunc faucibus a pellentesque sit amet porttitor eget.</p><p>Dapibus ultrices in iaculis nunc sed augue lacus. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Tortor vitae purus faucibus ornare suspendisse. Risus pretium quam vulputate dignissim suspendisse in est ante in. Aliquam faucibus purus in massa tempor. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Eu mi bibendum neque egestas congue quisque egestas diam in. Tempus egestas sed sed risus pretium quam vulputate. In nisl nisi scelerisque eu ultrices. Consequat mauris nunc congue nisi vitae. Iaculis eu non diam phasellus vestibulum lorem. Ipsum nunc aliquet bibendum enim facilisis gravida.</p><p>Proin fermentum leo vel orci porta non pulvinar. Fermentum leo vel orci porta non pulvinar neque laoreet. Elementum nibh tellus molestie nunc non blandit. Lacus vel facilisis volutpat est velit egestas dui. Malesuada fames ac turpis egestas. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Senectus et netus et malesuada fames ac turpis. Neque gravida in fermentum et sollicitudin ac. Faucibus nisl tincidunt eget nullam non nisi est sit. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eleifend donec pretium vulputate sapien.</p><p>Lorem donec massa sapien faucibus. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Morbi tempus iaculis urna id volutpat lacus laoreet. Mi sit amet mauris commodo quis imperdiet. Tortor posuere ac ut consequat semper. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Odio tempor orci dapibus ultrices in iaculis nunc sed. Cras sed felis eget velit aliquet sagittis id. Vestibulum mattis ullamcorper velit sed. Pharetra vel turpis nunc eget lorem dolor sed.</p>	2	1
-2022-10-28 06:44:09.553663	2022-10-28 06:44:09.553663	de	Wie funktioniert's?	wie-funktionierts	<h2>Wie funktioniert vendure?</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	3	2
-2022-10-28 06:44:21.598896	2022-10-28 06:44:21.598896	fr	Wie funktioniert's in Französisch?	wie-funktionierts-in-franzosisch	<h2>Wie funktioniert vendure auf Französisch?</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	4	2
 \.
 
 
@@ -3755,8 +3817,6 @@ COPY public.payment_method ("createdAt", "updatedAt", name, code, description, e
 --
 
 COPY public.payment_method_channels_channel ("paymentMethodId", "channelId") FROM stdin;
-1	1
-2	1
 \.
 
 
@@ -3764,9 +3824,7 @@ COPY public.payment_method_channels_channel ("paymentMethodId", "channelId") FRO
 -- Data for Name: product; Type: TABLE DATA; Schema: public; Owner: vendure
 --
 
-COPY public.product ("createdAt", "updatedAt", "deletedAt", enabled, id, "featuredAssetId", "customFieldsPackages", "customFieldsState", "customFieldsInitialstock", "customFieldsGuaranteedpaid", "customFieldsGuaranteed", "customFieldsReservedpaid", "customFieldsReserved", "customFieldsSellstartdate", "customFieldsSellenddate") FROM stdin;
-2022-11-04 07:48:37.943353	2022-11-09 07:47:49.358884	2022-11-09 07:47:49.382	t	2	\N	\N	Created	1000	0	0	0	0	\N	\N
-2022-11-04 07:45:49.61042	2022-11-09 07:47:45.962628	2022-11-09 07:47:45.984	t	1	\N	\N	Created	5000	0	0	0	0	\N	\N
+COPY public.product ("createdAt", "updatedAt", "deletedAt", enabled, id, "featuredAssetId") FROM stdin;
 \.
 
 
@@ -3783,8 +3841,6 @@ COPY public.product_asset ("createdAt", "updatedAt", "assetId", "position", "pro
 --
 
 COPY public.product_channels_channel ("productId", "channelId") FROM stdin;
-1	1
-2	1
 \.
 
 
@@ -3801,10 +3857,6 @@ COPY public.product_facet_values_facet_value ("productId", "facetValueId") FROM 
 --
 
 COPY public.product_option ("createdAt", "updatedAt", "deletedAt", code, id, "groupId") FROM stdin;
-2022-11-04 07:45:49.612102	2022-11-09 07:47:45.962628	2022-11-09 07:47:46.051	guaranteed	1	1
-2022-11-04 07:45:49.612102	2022-11-09 07:47:45.962628	2022-11-09 07:47:46.07	reserved	2	1
-2022-11-04 07:48:37.984419	2022-11-09 07:47:49.358884	2022-11-09 07:47:49.423	guaranteed	3	2
-2022-11-04 07:48:37.984419	2022-11-09 07:47:49.358884	2022-11-09 07:47:49.437	reserved	4	2
 \.
 
 
@@ -3813,8 +3865,6 @@ COPY public.product_option ("createdAt", "updatedAt", "deletedAt", code, id, "gr
 --
 
 COPY public.product_option_group ("createdAt", "updatedAt", "deletedAt", code, id, "productId") FROM stdin;
-2022-11-04 07:45:49.612102	2022-11-09 07:47:45.962628	2022-11-09 07:47:46.085	state	1	1
-2022-11-04 07:48:37.984419	2022-11-09 07:47:49.358884	2022-11-09 07:47:49.45	state	2	2
 \.
 
 
@@ -3823,8 +3873,6 @@ COPY public.product_option_group ("createdAt", "updatedAt", "deletedAt", code, i
 --
 
 COPY public.product_option_group_translation ("createdAt", "updatedAt", "languageCode", name, id, "baseId") FROM stdin;
-2022-11-04 07:45:49.612102	2022-11-04 07:45:49.612102	de	state	1	1
-2022-11-04 07:48:37.984419	2022-11-04 07:48:37.984419	fr	state	2	2
 \.
 
 
@@ -3833,10 +3881,6 @@ COPY public.product_option_group_translation ("createdAt", "updatedAt", "languag
 --
 
 COPY public.product_option_translation ("createdAt", "updatedAt", "languageCode", name, id, "baseId") FROM stdin;
-2022-11-04 07:45:49.612102	2022-11-04 07:45:49.612102	de	guaranteed	1	1
-2022-11-04 07:45:49.612102	2022-11-04 07:45:49.612102	de	reserved	2	2
-2022-11-04 07:48:37.984419	2022-11-04 07:48:37.984419	fr	guaranteed	3	3
-2022-11-04 07:48:37.984419	2022-11-04 07:48:37.984419	fr	reserved	4	4
 \.
 
 
@@ -3869,10 +3913,6 @@ COPY public.product_variant_asset ("createdAt", "updatedAt", "assetId", "positio
 --
 
 COPY public.product_variant_channels_channel ("productVariantId", "channelId") FROM stdin;
-1	1
-2	1
-3	1
-4	1
 \.
 
 
@@ -3889,10 +3929,6 @@ COPY public.product_variant_facet_values_facet_value ("productVariantId", "facet
 --
 
 COPY public.product_variant_options_product_option ("productVariantId", "productOptionId") FROM stdin;
-1	1
-2	2
-3	3
-4	4
 \.
 
 
@@ -3901,10 +3937,6 @@ COPY public.product_variant_options_product_option ("productVariantId", "product
 --
 
 COPY public.product_variant_price ("createdAt", "updatedAt", price, id, "channelId", "variantId") FROM stdin;
-2022-11-04 07:45:49.890253	2022-11-04 07:45:49.890253	10000	1	1	1
-2022-11-04 07:45:49.890253	2022-11-04 07:45:49.890253	10000	2	1	2
-2022-11-04 07:48:38.22184	2022-11-04 07:48:38.22184	100000	3	1	3
-2022-11-04 07:48:38.22184	2022-11-04 07:48:38.22184	100000	4	1	4
 \.
 
 
@@ -5855,6 +5887,614 @@ ALTER TABLE ONLY public.user_roles_role
 
 ALTER TABLE ONLY public.collection_asset
     ADD CONSTRAINT "FK_51da53b26522dc0525762d2de8e" FOREIGN KEY ("assetId") REFERENCES public.asset(id) ON DELETE CASCADE;
+
+
+--
+-- Name: product_variant_options_product_option FK_526f0131260eec308a3bd2b61b6; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant_options_product_option
+    ADD CONSTRAINT "FK_526f0131260eec308a3bd2b61b6" FOREIGN KEY ("productVariantId") REFERENCES public.product_variant(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: product_asset FK_5888ac17b317b93378494a10620; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_asset
+    ADD CONSTRAINT "FK_5888ac17b317b93378494a10620" FOREIGN KEY ("assetId") REFERENCES public.asset(id) ON DELETE CASCADE;
+
+
+--
+-- Name: payment_method_channels_channel FK_5bcb569635ce5407eb3f264487d; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.payment_method_channels_channel
+    ADD CONSTRAINT "FK_5bcb569635ce5407eb3f264487d" FOREIGN KEY ("paymentMethodId") REFERENCES public.payment_method(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: user_roles_role FK_5f9286e6c25594c6b88c108db77; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.user_roles_role
+    ADD CONSTRAINT "FK_5f9286e6c25594c6b88c108db77" FOREIGN KEY ("userId") REFERENCES public."user"(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: order_promotions_promotion FK_67be0e40122ab30a62a9817efe0; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_promotions_promotion
+    ADD CONSTRAINT "FK_67be0e40122ab30a62a9817efe0" FOREIGN KEY ("orderId") REFERENCES public."order"(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: order_item FK_69384323444206753f0cdeb64e0; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_item
+    ADD CONSTRAINT "FK_69384323444206753f0cdeb64e0" FOREIGN KEY ("lineId") REFERENCES public.order_line(id) ON DELETE CASCADE;
+
+
+--
+-- Name: product_variant_facet_values_facet_value FK_69567bc225b6bbbd732d6c5455b; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant_facet_values_facet_value
+    ADD CONSTRAINT "FK_69567bc225b6bbbd732d6c5455b" FOREIGN KEY ("productVariantId") REFERENCES public.product_variant(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: product_facet_values_facet_value FK_6a0558e650d75ae639ff38e413a; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_facet_values_facet_value
+    ADD CONSTRAINT "FK_6a0558e650d75ae639ff38e413a" FOREIGN KEY ("productId") REFERENCES public.product(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: promotion_channels_channel FK_6d9e2c39ab12391aaa374bcdaa4; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.promotion_channels_channel
+    ADD CONSTRAINT "FK_6d9e2c39ab12391aaa374bcdaa4" FOREIGN KEY ("promotionId") REFERENCES public.promotion(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: product_variant FK_6e420052844edf3a5506d863ce6; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant
+    ADD CONSTRAINT "FK_6e420052844edf3a5506d863ce6" FOREIGN KEY ("productId") REFERENCES public.product(id);
+
+
+--
+-- Name: collection_product_variants_product_variant FK_6faa7b72422d9c4679e2f186ad1; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.collection_product_variants_product_variant
+    ADD CONSTRAINT "FK_6faa7b72422d9c4679e2f186ad1" FOREIGN KEY ("collectionId") REFERENCES public.collection(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: collection_channels_channel FK_7216ab24077cf5cbece7857dbbd; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.collection_channels_channel
+    ADD CONSTRAINT "FK_7216ab24077cf5cbece7857dbbd" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: collection FK_7256fef1bb42f1b38156b7449f5; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.collection
+    ADD CONSTRAINT "FK_7256fef1bb42f1b38156b7449f5" FOREIGN KEY ("featuredAssetId") REFERENCES public.asset(id) ON DELETE SET NULL;
+
+
+--
+-- Name: zone_members_country FK_7350d77b6474313fbbaf4b094c1; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.zone_members_country
+    ADD CONSTRAINT "FK_7350d77b6474313fbbaf4b094c1" FOREIGN KEY ("zoneId") REFERENCES public.zone(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: order_line FK_77be94ce9ec6504466179462275; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_line
+    ADD CONSTRAINT "FK_77be94ce9ec6504466179462275" FOREIGN KEY ("taxCategoryId") REFERENCES public.tax_category(id);
+
+
+--
+-- Name: session FK_7a75399a4f4ffa48ee02e98c059; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.session
+    ADD CONSTRAINT "FK_7a75399a4f4ffa48ee02e98c059" FOREIGN KEY ("activeOrderId") REFERENCES public."order"(id);
+
+
+--
+-- Name: zone_members_country FK_7baeecaf955e54bec73f998b0d5; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.zone_members_country
+    ADD CONSTRAINT "FK_7baeecaf955e54bec73f998b0d5" FOREIGN KEY ("countryId") REFERENCES public.country(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: product_translation FK_7dbc75cb4e8b002620c4dbfdac5; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_translation
+    ADD CONSTRAINT "FK_7dbc75cb4e8b002620c4dbfdac5" FOREIGN KEY ("baseId") REFERENCES public.product(id);
+
+
+--
+-- Name: tax_rate FK_7ee3306d7638aa85ca90d672198; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.tax_rate
+    ADD CONSTRAINT "FK_7ee3306d7638aa85ca90d672198" FOREIGN KEY ("categoryId") REFERENCES public.tax_category(id);
+
+
+--
+-- Name: order_item_fulfillments_fulfillment FK_8132041a647c28eb27ecc1691fa; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_item_fulfillments_fulfillment
+    ADD CONSTRAINT "FK_8132041a647c28eb27ecc1691fa" FOREIGN KEY ("fulfillmentId") REFERENCES public.fulfillment(id);
+
+
+--
+-- Name: shipping_method_translation FK_85ec26c71067ebc84adcd98d1a5; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.shipping_method_translation
+    ADD CONSTRAINT "FK_85ec26c71067ebc84adcd98d1a5" FOREIGN KEY ("baseId") REFERENCES public.shipping_method(id);
+
+
+--
+-- Name: customer_groups_customer_group FK_85feea3f0e5e82133605f78db02; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.customer_groups_customer_group
+    ADD CONSTRAINT "FK_85feea3f0e5e82133605f78db02" FOREIGN KEY ("customerGroupId") REFERENCES public.customer_group(id);
+
+
+--
+-- Name: tax_rate FK_8b5ab52fc8887c1a769b9276caf; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.tax_rate
+    ADD CONSTRAINT "FK_8b5ab52fc8887c1a769b9276caf" FOREIGN KEY ("customerGroupId") REFERENCES public.customer_group(id);
+
+
+--
+-- Name: product FK_91a19e6613534949a4ce6e76ff8; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product
+    ADD CONSTRAINT "FK_91a19e6613534949a4ce6e76ff8" FOREIGN KEY ("featuredAssetId") REFERENCES public.asset(id) ON DELETE SET NULL;
+
+
+--
+-- Name: history_entry FK_92f8c334ef06275f9586fd01832; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.history_entry
+    ADD CONSTRAINT "FK_92f8c334ef06275f9586fd01832" FOREIGN KEY ("administratorId") REFERENCES public.administrator(id);
+
+
+--
+-- Name: product_option_group_translation FK_93751abc1451972c02e033b766c; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_option_group_translation
+    ADD CONSTRAINT "FK_93751abc1451972c02e033b766c" FOREIGN KEY ("baseId") REFERENCES public.product_option_group(id);
+
+
+--
+-- Name: tax_rate FK_9872fc7de2f4e532fd3230d1915; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.tax_rate
+    ADD CONSTRAINT "FK_9872fc7de2f4e532fd3230d1915" FOREIGN KEY ("zoneId") REFERENCES public.zone(id);
+
+
+--
+-- Name: order_modification_order_items_order_item FK_9d631d7bd3d44af50eca535d728; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_modification_order_items_order_item
+    ADD CONSTRAINT "FK_9d631d7bd3d44af50eca535d728" FOREIGN KEY ("orderItemId") REFERENCES public.order_item(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: asset_tags_tag FK_9e412b00d4c6cee1a4b3d920716; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.asset_tags_tag
+    ADD CONSTRAINT "FK_9e412b00d4c6cee1a4b3d920716" FOREIGN KEY ("assetId") REFERENCES public.asset(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: order_line FK_9f065453910ea77d4be8e92618f; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_line
+    ADD CONSTRAINT "FK_9f065453910ea77d4be8e92618f" FOREIGN KEY ("featuredAssetId") REFERENCES public.asset(id);
+
+
+--
+-- Name: order_modification_order_items_order_item FK_a48502a38aded69d087a8ec08ad; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_modification_order_items_order_item
+    ADD CONSTRAINT "FK_a48502a38aded69d087a8ec08ad" FOREIGN KEY ("orderModificationId") REFERENCES public.order_modification(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: surcharge FK_a49c5271c39cc8174a0535c8088; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.surcharge
+    ADD CONSTRAINT "FK_a49c5271c39cc8174a0535c8088" FOREIGN KEY ("orderModificationId") REFERENCES public.order_modification(id);
+
+
+--
+-- Name: product_channels_channel FK_a51dfbd87c330c075c39832b6e7; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_channels_channel
+    ADD CONSTRAINT "FK_a51dfbd87c330c075c39832b6e7" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: order_item_fulfillments_fulfillment FK_a568a3d5aa7f237edab624960b9; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_item_fulfillments_fulfillment
+    ADD CONSTRAINT "FK_a568a3d5aa7f237edab624960b9" FOREIGN KEY ("orderItemId") REFERENCES public.order_item(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: product_option FK_a6debf9198e2fbfa006aa10d710; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_option
+    ADD CONSTRAINT "FK_a6debf9198e2fbfa006aa10d710" FOREIGN KEY ("groupId") REFERENCES public.product_option_group(id);
+
+
+--
+-- Name: product_option_group FK_a6e91739227bf4d442f23c52c75; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_option_group
+    ADD CONSTRAINT "FK_a6e91739227bf4d442f23c52c75" FOREIGN KEY ("productId") REFERENCES public.product(id);
+
+
+--
+-- Name: product_option_translation FK_a79a443c1f7841f3851767faa6d; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_option_translation
+    ADD CONSTRAINT "FK_a79a443c1f7841f3851767faa6d" FOREIGN KEY ("baseId") REFERENCES public.product_option(id);
+
+
+--
+-- Name: customer_channels_channel FK_a842c9fe8cd4c8ff31402d172d7; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.customer_channels_channel
+    ADD CONSTRAINT "FK_a842c9fe8cd4c8ff31402d172d7" FOREIGN KEY ("customerId") REFERENCES public.customer(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: order_modification FK_ad2991fa2933ed8b7f86a716338; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_modification
+    ADD CONSTRAINT "FK_ad2991fa2933ed8b7f86a716338" FOREIGN KEY ("paymentId") REFERENCES public.payment(id);
+
+
+--
+-- Name: facet_value_channels_channel FK_ad690c1b05596d7f52e52ffeedd; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.facet_value_channels_channel
+    ADD CONSTRAINT "FK_ad690c1b05596d7f52e52ffeedd" FOREIGN KEY ("facetValueId") REFERENCES public.facet_value(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: channel FK_afe9f917a1c82b9e9e69f7c6129; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.channel
+    ADD CONSTRAINT "FK_afe9f917a1c82b9e9e69f7c6129" FOREIGN KEY ("defaultTaxZoneId") REFERENCES public.zone(id);
+
+
+--
+-- Name: customer_groups_customer_group FK_b823a3c8bf3b78d3ed68736485c; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.customer_groups_customer_group
+    ADD CONSTRAINT "FK_b823a3c8bf3b78d3ed68736485c" FOREIGN KEY ("customerId") REFERENCES public.customer(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: product_variant_channels_channel FK_beeb2b3cd800e589f2213ae99d6; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant_channels_channel
+    ADD CONSTRAINT "FK_beeb2b3cd800e589f2213ae99d6" FOREIGN KEY ("productVariantId") REFERENCES public.product_variant(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: role_channels_channel FK_bfd2a03e9988eda6a9d11760119; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.role_channels_channel
+    ADD CONSTRAINT "FK_bfd2a03e9988eda6a9d11760119" FOREIGN KEY ("roleId") REFERENCES public.role(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: payment_method_channels_channel FK_c00e36f667d35031087b382e61b; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.payment_method_channels_channel
+    ADD CONSTRAINT "FK_c00e36f667d35031087b382e61b" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: channel FK_c9ca2f58d4517460435cbd8b4c9; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.channel
+    ADD CONSTRAINT "FK_c9ca2f58d4517460435cbd8b4c9" FOREIGN KEY ("defaultShippingZoneId") REFERENCES public.zone(id);
+
+
+--
+-- Name: shipping_line FK_c9f34a440d490d1b66f6829b86c; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.shipping_line
+    ADD CONSTRAINT "FK_c9f34a440d490d1b66f6829b86c" FOREIGN KEY ("orderId") REFERENCES public."order"(id);
+
+
+--
+-- Name: facet_channels_channel FK_ca796020c6d097e251e5d6d2b02; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.facet_channels_channel
+    ADD CONSTRAINT "FK_ca796020c6d097e251e5d6d2b02" FOREIGN KEY ("facetId") REFERENCES public.facet(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: order_modification FK_cb66b63b6e97613013795eadbd5; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_modification
+    ADD CONSTRAINT "FK_cb66b63b6e97613013795eadbd5" FOREIGN KEY ("refundId") REFERENCES public.refund(id);
+
+
+--
+-- Name: stock_movement FK_cbb0990e398bf7713aebdd38482; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.stock_movement
+    ADD CONSTRAINT "FK_cbb0990e398bf7713aebdd38482" FOREIGN KEY ("orderItemId") REFERENCES public.order_item(id);
+
+
+--
+-- Name: order_line FK_cbcd22193eda94668e84d33f185; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_line
+    ADD CONSTRAINT "FK_cbcd22193eda94668e84d33f185" FOREIGN KEY ("productVariantId") REFERENCES public.product_variant(id);
+
+
+--
+-- Name: collection_channels_channel FK_cdbf33ffb5d4519161251520083; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.collection_channels_channel
+    ADD CONSTRAINT "FK_cdbf33ffb5d4519161251520083" FOREIGN KEY ("collectionId") REFERENCES public.collection(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: payment FK_d09d285fe1645cd2f0db811e293; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.payment
+    ADD CONSTRAINT "FK_d09d285fe1645cd2f0db811e293" FOREIGN KEY ("orderId") REFERENCES public."order"(id);
+
+
+--
+-- Name: order_channels_channel FK_d0d16db872499e83b15999f8c7a; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.order_channels_channel
+    ADD CONSTRAINT "FK_d0d16db872499e83b15999f8c7a" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: facet_value FK_d101dc2265a7341be3d94968c5b; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.facet_value
+    ADD CONSTRAINT "FK_d101dc2265a7341be3d94968c5b" FOREIGN KEY ("facetId") REFERENCES public.facet(id) ON DELETE CASCADE;
+
+
+--
+-- Name: product_variant_channels_channel FK_d194bff171b62357688a5d0f559; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant_channels_channel
+    ADD CONSTRAINT "FK_d194bff171b62357688a5d0f559" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: stock_movement FK_d2c8d5fca981cc820131f81aa83; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.stock_movement
+    ADD CONSTRAINT "FK_d2c8d5fca981cc820131f81aa83" FOREIGN KEY ("orderLineId") REFERENCES public.order_line(id);
+
+
+--
+-- Name: address FK_d87215343c3a3a67e6a0b7f3ea9; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.address
+    ADD CONSTRAINT "FK_d87215343c3a3a67e6a0b7f3ea9" FOREIGN KEY ("countryId") REFERENCES public.country(id);
+
+
+--
+-- Name: address FK_dc34d382b493ade1f70e834c4d3; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.address
+    ADD CONSTRAINT "FK_dc34d382b493ade1f70e834c4d3" FOREIGN KEY ("customerId") REFERENCES public.customer(id);
+
+
+--
+-- Name: asset_channels_channel FK_dc4e7435f9f5e9e6436bebd33bb; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.asset_channels_channel
+    ADD CONSTRAINT "FK_dc4e7435f9f5e9e6436bebd33bb" FOREIGN KEY ("assetId") REFERENCES public.asset(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: customer_channels_channel FK_dc9f69207a8867f83b0fd257e30; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.customer_channels_channel
+    ADD CONSTRAINT "FK_dc9f69207a8867f83b0fd257e30" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: role_channels_channel FK_e09dfee62b158307404202b43a5; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.role_channels_channel
+    ADD CONSTRAINT "FK_e09dfee62b158307404202b43a5" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: facet_value_channels_channel FK_e1d54c0b9db3e2eb17faaf5919c; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.facet_value_channels_channel
+    ADD CONSTRAINT "FK_e1d54c0b9db3e2eb17faaf5919c" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: shipping_line FK_e2e7642e1e88167c1dfc827fdf3; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.shipping_line
+    ADD CONSTRAINT "FK_e2e7642e1e88167c1dfc827fdf3" FOREIGN KEY ("shippingMethodId") REFERENCES public.shipping_method(id);
+
+
+--
+-- Name: collection_translation FK_e329f9036210d75caa1d8f2154a; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.collection_translation
+    ADD CONSTRAINT "FK_e329f9036210d75caa1d8f2154a" FOREIGN KEY ("baseId") REFERENCES public.collection(id) ON DELETE CASCADE;
+
+
+--
+-- Name: product_variant FK_e38dca0d82fd64c7cf8aac8b8ef; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant
+    ADD CONSTRAINT "FK_e38dca0d82fd64c7cf8aac8b8ef" FOREIGN KEY ("taxCategoryId") REFERENCES public.tax_category(id);
+
+
+--
+-- Name: product_variant_price FK_e6126cd268aea6e9b31d89af9ab; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant_price
+    ADD CONSTRAINT "FK_e6126cd268aea6e9b31d89af9ab" FOREIGN KEY ("variantId") REFERENCES public.product_variant(id);
+
+
+--
+-- Name: stock_movement FK_e65ba3882557cab4febb54809bb; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.stock_movement
+    ADD CONSTRAINT "FK_e65ba3882557cab4febb54809bb" FOREIGN KEY ("productVariantId") REFERENCES public.product_variant(id);
+
+
+--
+-- Name: product_variant_options_product_option FK_e96a71affe63c97f7fa2f076dac; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant_options_product_option
+    ADD CONSTRAINT "FK_e96a71affe63c97f7fa2f076dac" FOREIGN KEY ("productOptionId") REFERENCES public.product_option(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: facet_translation FK_eaea53f44bf9e97790d38a3d68f; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.facet_translation
+    ADD CONSTRAINT "FK_eaea53f44bf9e97790d38a3d68f" FOREIGN KEY ("baseId") REFERENCES public.facet(id) ON DELETE CASCADE;
+
+
+--
+-- Name: session FK_eb87ef1e234444728138302263b; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.session
+    ADD CONSTRAINT "FK_eb87ef1e234444728138302263b" FOREIGN KEY ("activeChannelId") REFERENCES public.channel(id);
+
+
+--
+-- Name: shipping_method_channels_channel FK_f0a17b94aa5a162f0d422920eb2; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.shipping_method_channels_channel
+    ADD CONSTRAINT "FK_f0a17b94aa5a162f0d422920eb2" FOREIGN KEY ("shippingMethodId") REFERENCES public.shipping_method(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: shipping_method_channels_channel FK_f2b98dfb56685147bed509acc3d; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.shipping_method_channels_channel
+    ADD CONSTRAINT "FK_f2b98dfb56685147bed509acc3d" FOREIGN KEY ("channelId") REFERENCES public.channel(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: product_variant_asset FK_fa21412afac15a2304f3eb35feb; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.product_variant_asset
+    ADD CONSTRAINT "FK_fa21412afac15a2304f3eb35feb" FOREIGN KEY ("productVariantId") REFERENCES public.product_variant(id) ON DELETE CASCADE;
+
+
+--
+-- Name: collection_product_variants_product_variant FK_fb05887e2867365f236d7dd95ee; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.collection_product_variants_product_variant
+    ADD CONSTRAINT "FK_fb05887e2867365f236d7dd95ee" FOREIGN KEY ("productVariantId") REFERENCES public.product_variant(id);
+
+
+--
+-- Name: asset_tags_tag FK_fb5e800171ffbe9823f2cc727fd; Type: FK CONSTRAINT; Schema: public; Owner: vendure
+--
+
+ALTER TABLE ONLY public.asset_tags_tag
+    ADD CONSTRAINT "FK_fb5e800171ffbe9823f2cc727fd" FOREIGN KEY ("tagId") REFERENCES public.tag(id) ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 --
